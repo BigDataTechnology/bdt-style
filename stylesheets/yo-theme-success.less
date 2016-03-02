@@ -1,0 +1,114 @@
+@import "variables.less";
+
+@success-text-color:              @brand-white;
+@success-text-color-hover:        @gray-lighter;
+
+.yo-theme-success{
+
+  .yo-img-logo{
+    content:url("/img/logo.png");
+  }
+  .yo-img-logo-mobile{
+    content:url("/img/logo_mobile.png");
+  }
+
+  .navbar{
+    background-color: @brand-success;
+    border-color: @brand-success;
+
+    .navbar-nav {
+      .open > a {
+        background-color: darken(@brand-success, 5%);
+        color: @success-text-color;
+      }
+      .yo-menu-item{
+        color: @success-text-color;
+        &:hover {
+          background-color: darken(@brand-success, 4%);
+          color: @success-text-color-hover;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+
+
+  .navbar-header {
+    .navbar-brand{
+      color: @success-text-color;
+      .open{
+        background-color: darken(@brand-success, 5%);
+      }
+      &:hover {
+        background-color: darken(@brand-success, 4%);
+        color: @success-text-color-hover;
+        text-decoration: none;
+      }
+    }
+  }
+  .nav{
+    .login-link-and-dropdown-list > a{
+      color: @success-text-color;
+      &:hover {
+        color: @success-text-color-hover;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .panel-default{
+    border-color: @brand-success;
+    .panel-heading{
+      background-color: @brand-success;
+      border-color: @brand-success;
+      color: @success-text-color;
+    }
+  }
+
+  /*change breadcrumb background color*/
+  .breadcrumb {
+    background-color: #FAFAFA;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  /*change active color*/
+  .breadcrumb > .active {
+    color: #aaa;
+  }
+
+  /*change abstract color*/
+  .breadcrumb > li:not(.active) span {
+    color: #aaa;
+  }
+
+  /*change breadcrumb separator to raquo symbol*/
+  .breadcrumb > li + li:before {
+    content: "\00BB";
+    //color: #aaa;
+  }
+
+  /*change breadcrumb links color*/
+  .breadcrumb a{
+    color: @brand-success;
+  }
+  .breadcrumb a:hover{
+    color: lighten(@brand-success, 10%);
+    text-decoration: none;
+  }
+
+  .yo-default-bg {
+    background-color: @brand-success;
+    color: @success-text-color;
+  }
+
+  .list-group > .list-group-item {
+    a {
+      color: @brand-success;
+    }
+  }
+
+}

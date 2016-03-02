@@ -1,0 +1,112 @@
+@import "variables.less";
+
+@black-text-color:              @brand-white;
+@black-text-color-hover:        @gray-lighter;
+
+.yo-theme-black{
+
+  .yo-img-logo{
+    content:url("/img/logo.png");
+  }
+  .yo-img-logo-mobile{
+    content:url("/img/logo_mobile.png");
+  }
+
+  .navbar{
+    background-color: @black;
+    border-color: @black;
+
+    .navbar-nav {
+      .open > a {
+        background-color: darken(@black, 5%);
+        color: @black-text-color;
+      }
+      .yo-menu-item{
+        color: @black-text-color;
+        &:hover {
+          background-color: darken(@black, 4%);
+          color: @black-text-color-hover;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .navbar-header {
+    .navbar-brand{
+      color: @black-text-color;
+      .open{
+        background-color: darken(@black, 5%);
+      }
+      &:hover {
+        background-color: darken(@black, 4%);
+        color: @black-text-color-hover;
+        text-decoration: none;
+      }
+    }
+  }
+  .nav{
+    .login-link-and-dropdown-list > a{
+      color: @black-text-color;
+      &:hover {
+        color: @black-text-color-hover;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .panel-default{
+    border-color: @black;
+    .panel-heading{
+      background-color: @black;
+      border-color: @black;
+      color: @black-text-color;
+    }
+  }
+
+  /*change breadcrumb background color*/
+  .breadcrumb {
+    background-color: #FAFAFA;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  /*change active color*/
+  .breadcrumb > .active {
+    color: #aaa;
+  }
+
+  /*change abstract color*/
+  .breadcrumb > li:not(.active) span {
+    color: #aaa;
+  }
+
+  /*change breadcrumb separator to raquo symbol*/
+  .breadcrumb > li + li:before {
+    content: "\00BB";
+    //color: #aaa;
+  }
+
+  /*change breadcrumb links color*/
+  .breadcrumb a{
+    color: @black;
+  }
+  .breadcrumb a:hover{
+    color: lighten(@black, 10%);
+    text-decoration: none;
+  }
+
+  .yo-default-bg {
+    background-color: @black;
+    color: @black-text-color;
+  }
+
+  .list-group > .list-group-item {
+    a {
+      color: @black;
+    }
+  }
+
+}

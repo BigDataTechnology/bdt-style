@@ -1,0 +1,112 @@
+@import "variables.less";
+
+@violet-text-color:              @brand-white;
+@violet-text-color-hover:        @gray-lighter;
+
+.yo-theme-violet{
+
+  .yo-img-logo{
+    content:url("/img/logo.png");
+  }
+  .yo-img-logo-mobile{
+    content:url("/img/logo_mobile.png");
+  }
+
+  .navbar{
+    background-color: @brand-violet;
+    border-color: @brand-violet;
+
+    .navbar-nav {
+      .open > a {
+        background-color: darken(@brand-violet, 5%);
+        color: @violet-text-color;
+      }
+      .yo-menu-item{
+        color: @violet-text-color;
+        &:hover {
+          background-color: darken(@brand-violet, 4%);
+          color: @violet-text-color-hover;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .navbar-header {
+    .navbar-brand{
+      color: @violet-text-color;
+      .open{
+        background-color: darken(@brand-violet, 5%);
+      }
+      &:hover {
+        background-color: darken(@brand-violet, 4%);
+        color: @violet-text-color-hover;
+        text-decoration: none;
+      }
+    }
+  }
+  .nav{
+    .login-link-and-dropdown-list > a{
+      color: @violet-text-color;
+      &:hover {
+        color: @violet-text-color-hover;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .panel-default{
+    border-color: @brand-violet;
+    .panel-heading{
+      background-color: @brand-violet;
+      border-color: @brand-violet;
+      color: @violet-text-color;
+    }
+  }
+
+  /*change breadcrumb background color*/
+  .breadcrumb {
+    background-color: #FAFAFA;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  /*change active color*/
+  .breadcrumb > .active {
+    color: #aaa;
+  }
+
+  /*change abstract color*/
+  .breadcrumb > li:not(.active) span {
+    color: #aaa;
+  }
+
+  /*change breadcrumb separator to raquo symbol*/
+  .breadcrumb > li + li:before {
+    content: "\00BB";
+    //color: #aaa;
+  }
+
+  /*change breadcrumb links color*/
+  .breadcrumb a{
+    color: @brand-violet;
+  }
+  .breadcrumb a:hover{
+    color: lighten(@brand-violet, 10%);
+    text-decoration: none;
+  }
+
+  .yo-default-bg {
+    background-color: @brand-violet;
+    color: @violet-text-color;
+  }
+
+  .list-group > .list-group-item {
+    a {
+      color: @brand-violet;
+    }
+  }
+
+}
