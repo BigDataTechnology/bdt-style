@@ -1,0 +1,112 @@
+@import "variables.less";
+
+@warning-text-color:              @brand-white;
+@warning-text-color-hover:        @gray-lighter;
+
+.yo-theme-warning{
+
+  .yo-img-logo{
+    content:url("/img/logo.png");
+  }
+  .yo-img-logo-mobile{
+    content:url("/img/logo_mobile.png");
+  }
+
+  .navbar{
+    background-color: @brand-warning;
+    border-color: @brand-warning;
+
+    .navbar-nav {
+      .open > a {
+        background-color: darken(@brand-warning, 5%);
+        color: @warning-text-color;
+      }
+      .yo-menu-item{
+        color: @warning-text-color;
+        &:hover {
+          background-color: darken(@brand-warning, 4%);
+          color: @warning-text-color-hover;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .navbar-header {
+    .navbar-brand{
+      color: @warning-text-color;
+      .open{
+        background-color: darken(@brand-warning, 5%);
+      }
+      &:hover {
+        background-color: darken(@brand-warning, 4%);
+        color: @warning-text-color-hover;
+        text-decoration: none;
+      }
+    }
+  }
+  .nav{
+    .login-link-and-dropdown-list > a{
+      color: @warning-text-color;
+      &:hover {
+        color: @warning-text-color-hover;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .panel-default{
+    border-color: @brand-warning;
+    .panel-heading{
+      background-color: @brand-warning;
+      border-color: @brand-warning;
+      color: @warning-text-color;
+    }
+  }
+
+  /*change breadcrumb background color*/
+  .breadcrumb {
+    background-color: #FAFAFA;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  /*change active color*/
+  .breadcrumb > .active {
+    color: #aaa;
+  }
+
+  /*change abstract color*/
+  .breadcrumb > li:not(.active) span {
+    color: #aaa;
+  }
+
+  /*change breadcrumb separator to raquo symbol*/
+  .breadcrumb > li + li:before {
+    content: "\00BB";
+    //color: #aaa;
+  }
+
+  /*change breadcrumb links color*/
+  .breadcrumb a{
+    color: @brand-warning;
+  }
+  .breadcrumb a:hover{
+    color: lighten(@brand-warning, 10%);
+    text-decoration: none;
+  }
+
+  .yo-default-bg {
+    background-color: @brand-warning;
+    color: @warning-text-color;
+  }
+
+  .list-group > .list-group-item {
+    a {
+      color: @brand-warning;
+    }
+  }
+
+}

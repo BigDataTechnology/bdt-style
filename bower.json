@@ -1,0 +1,10 @@
+{
+  "name": "bdt-style",
+  "license": "MIT",
+  "version": "0.0.1",
+  "main": [
+    "./stylesheets/*"
+  ],
+  "description": "A set of style and template",
+  "ignore": []
+}

@@ -1,0 +1,38 @@
+@import "variables.less";
+
+body { padding-top: 70px; }
+
+//Custom button class
+.btn-black{
+    color: @gray-lighter;
+    background-color: @black;
+    border-color: #080808;
+
+    &:hover {
+        color: @gray-lighter;
+        text-decoration: none;
+        background-color: lighten(@black, 10%);
+    }
+}
+.btn-violet{
+    color: @gray-lighter;
+    background-color: @brand-violet;
+    border-color: #080808;
+
+    &:hover {
+        color: @gray-lighter;
+        text-decoration: none;
+        background-color: darken(@brand-violet, 10%);
+    }
+}
+.btn-white{
+    color: @black;
+    background-color: @brand-white;
+    border-color: #e7e7e7;
+
+    &:hover {
+        color: @black;
+        text-decoration: none;
+        background-color: darken(@brand-white, 10%);
+    }
+}
