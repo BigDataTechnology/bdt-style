@@ -1,31 +1,22 @@
-@import "variables.less";
+@primary-text-color:              @brand-white;
+@primary-text-color-hover:        @gray-lighter;
 
-@black-text-color:              @brand-white;
-@black-text-color-hover:        @gray-lighter;
-
-.yo-theme-black{
-
-  .yo-img-logo{
-    content:url("/img/logo.png");
-  }
-  .yo-img-logo-mobile{
-    content:url("/img/logo_mobile.png");
-  }
+.yo-theme-primary{
 
   .navbar{
-    background-color: @black;
-    border-color: @black;
+    background-color: @brand-primary;
+    border-color: @brand-primary;
 
     .navbar-nav {
       .open > a {
-        background-color: darken(@black, 5%);
-        color: @black-text-color;
+        background-color: darken(@brand-primary, 5%);
+        color: @primary-text-color;
       }
       .yo-menu-item{
-        color: @black-text-color;
+        color: @primary-text-color;
         &:hover {
-          background-color: darken(@black, 4%);
-          color: @black-text-color-hover;
+          background-color: darken(@brand-primary, 4%);
+          color: @primary-text-color-hover;
           text-decoration: none;
         }
       }
@@ -34,33 +25,33 @@
 
   .navbar-header {
     .navbar-brand{
-      color: @black-text-color;
+      color: @primary-text-color;
       .open{
-        background-color: darken(@black, 5%);
+        background-color: darken(@brand-primary, 5%);
       }
       &:hover {
-        background-color: darken(@black, 4%);
-        color: @black-text-color-hover;
+        background-color: darken(@brand-primary, 4%);
+        color: @primary-text-color-hover;
         text-decoration: none;
       }
     }
   }
   .nav{
     .login-link-and-dropdown-list > a{
-      color: @black-text-color;
+      color: @primary-text-color;
       &:hover {
-        color: @black-text-color-hover;
+        color: @primary-text-color-hover;
         text-decoration: none;
       }
     }
   }
 
   .panel-default{
-    border-color: @black;
+    border-color: @brand-primary;
     .panel-heading{
-      background-color: @black;
-      border-color: @black;
-      color: @black-text-color;
+      background-color: @brand-primary;
+      border-color: @brand-primary;
+      color: @primary-text-color;
     }
   }
 
@@ -91,21 +82,21 @@
 
   /*change breadcrumb links color*/
   .breadcrumb a{
-    color: @black;
+    color: @brand-primary;
   }
   .breadcrumb a:hover{
-    color: lighten(@black, 10%);
+    color: lighten(@brand-primary, 10%);
     text-decoration: none;
   }
 
   .yo-default-bg {
-    background-color: @black;
-    color: @black-text-color;
+    background-color: @brand-primary;
+    color: @primary-text-color;
   }
 
   .list-group > .list-group-item {
     a {
-      color: @black;
+      color: @brand-primary;
     }
   }
 
