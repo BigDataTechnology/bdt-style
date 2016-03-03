@@ -3,8 +3,8 @@
   "license": "MIT",
   "version": "0.0.1",
   "main": [
-    "./stylesheets/*"
+    "./main.css"
   ],
-  "description": "A set of style and template",
+  "description": "A set of style for BDT template",
   "ignore": []
 }
