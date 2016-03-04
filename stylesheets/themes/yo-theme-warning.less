@@ -94,9 +94,34 @@
     color: @warning-text-color;
   }
 
+  .list-group > .list-group-item.active,
+  .list-group-item.active:hover,
+  .list-group-item.focus
+  {
+    background-color: @brand-warning;
+    border-color: @brand-warning;
+    a {
+      color: @warning-text-color-hover;
+      text-decoration: none;
+    }
+  }
+
   .list-group > .list-group-item {
     a {
       color: @brand-warning;
+      text-decoration: none;
+    }
+  }
+
+  .btn-default{
+    color: @gray-lighter;
+    background-color: @brand-warning;
+    border-color: darken(@brand-warning, 15%);
+
+    &:hover {
+      color: @gray-lighter;
+      text-decoration: none;
+      background-color: darken(@brand-warning, 15%);
     }
   }
 

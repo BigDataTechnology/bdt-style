@@ -10,7 +10,7 @@
 .btn-black{
     color: @gray-lighter;
     background-color: @black;
-    border-color: #080808;
+    border-color: lighten(@black, 10%);
 
     &:hover {
         color: @gray-lighter;
@@ -21,22 +21,22 @@
 .btn-violet{
     color: @gray-lighter;
     background-color: @brand-violet;
-    border-color: #080808;
+    border-color: darken(@brand-violet, 15%);
 
     &:hover {
         color: @gray-lighter;
         text-decoration: none;
-        background-color: darken(@brand-violet, 10%);
+        background-color: darken(@brand-violet, 15%);
     }
 }
 .btn-white{
     color: @black;
     background-color: @brand-white;
-    border-color: #e7e7e7;
+    border-color: darken(@brand-white, 15%);
 
     &:hover {
         color: @black;
         text-decoration: none;
-        background-color: darken(@brand-white, 10%);
+        background-color: darken(@brand-white, 15%);
     }
 }

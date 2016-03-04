@@ -72,9 +72,34 @@
     text-decoration: none;
   }
 
+  .list-group > .list-group-item.active,
+  .list-group-item.active:hover,
+  .list-group-item.focus
+  {
+    background-color: darken(@brand-white, 15%);
+    border-color: darken(@brand-white, 15%);
+    a {
+      color: @white-text-color-hover;
+      text-decoration: none;
+    }
+  }
+
   .list-group > .list-group-item {
     a {
+      color: @white-text-color;
+      text-decoration: none;
+    }
+  }
+
+  .btn-default{
+    color: @black;
+    background-color: @brand-white;
+    border-color: darken(@brand-white, 15%);
+
+    &:hover {
       color: @black;
+      text-decoration: none;
+      background-color: darken(@brand-white, 15%);
     }
   }
 }
