@@ -85,7 +85,7 @@
     color: @brand-primary;
   }
   .breadcrumb a:hover{
-    color: lighten(@brand-primary, 10%);
+    color: lighten(@brand-primary, 15%);
     text-decoration: none;
   }
 
@@ -94,9 +94,34 @@
     color: @primary-text-color;
   }
 
+  .list-group > .list-group-item.active,
+  .list-group-item.active:hover,
+  .list-group-item.focus
+  {
+    background-color: @brand-primary;
+    border-color: @brand-primary;
+    a {
+      color: @primary-text-color-hover;
+      text-decoration: none;
+    }
+  }
+
   .list-group > .list-group-item {
     a {
       color: @brand-primary;
+      text-decoration: none;
+    }
+  }
+
+  .btn-default{
+    color: @gray-lighter;
+    background-color: @brand-primary;
+    border-color: darken(@brand-primary, 15%);
+
+    &:hover {
+      color: @gray-lighter;
+      text-decoration: none;
+      background-color: darken(@brand-primary, 15%);
     }
   }
 

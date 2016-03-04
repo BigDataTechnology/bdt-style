@@ -85,7 +85,7 @@
     color: @brand-violet;
   }
   .breadcrumb a:hover{
-    color: lighten(@brand-violet, 10%);
+    color: lighten(@brand-violet, 15%);
     text-decoration: none;
   }
 
@@ -94,9 +94,34 @@
     color: @violet-text-color;
   }
 
+  .list-group > .list-group-item.active,
+  .list-group-item.active:hover,
+  .list-group-item.focus
+  {
+    background-color: @brand-violet;
+    border-color: @brand-violet;
+    a {
+      color: @violet-text-color-hover;
+      text-decoration: none;
+    }
+  }
+
   .list-group > .list-group-item {
     a {
       color: @brand-violet;
+      text-decoration: none;
+    }
+  }
+
+  .btn-default{
+    color: @gray-lighter;
+    background-color: @brand-violet;
+    border-color: darken(@brand-violet, 15%);
+
+    &:hover {
+      color: @gray-lighter;
+      text-decoration: none;
+      background-color: darken(@brand-violet, 15%);
     }
   }
 

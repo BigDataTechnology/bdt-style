@@ -85,7 +85,7 @@
     color: @black;
   }
   .breadcrumb a:hover{
-    color: lighten(@black, 10%);
+    color: lighten(@black, 15%);
     text-decoration: none;
   }
 
@@ -94,9 +94,34 @@
     color: @black-text-color;
   }
 
+  .list-group > .list-group-item.active,
+  .list-group-item.active:hover,
+  .list-group-item.focus
+  {
+    background-color: @black;
+    border-color: @black;
+    a {
+      color: @black-text-color-hover;
+      text-decoration: none;
+    }
+  }
+
   .list-group > .list-group-item {
     a {
       color: @black;
+      text-decoration: none;
+    }
+  }
+
+  .btn-default{
+    color: @gray-lighter;
+    background-color: @black;
+    border-color: lighten(@black, 15%);
+
+    &:hover {
+      color: @gray-lighter;
+      text-decoration: none;
+      background-color: lighten(@black, 15%);
     }
   }
 
