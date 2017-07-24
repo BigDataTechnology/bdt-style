@@ -3,7 +3,7 @@
 Install via Bower
 
 ```bash
-$ bower install bdt-style=http://git.bdt.systems:8888/dev/bdt-style.git --save
+$ bower install bdt-style
 ```
 
 ## Installing lessc for Use Globally
